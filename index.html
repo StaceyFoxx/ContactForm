@@ -19,30 +19,37 @@
   <body>
     <div id="container">
       <h1>Contact Us</h1>
-      <form>
-        <label for="firstName">First Name *</label> 
-        <input type="text" id="firstName" name="firstName" required />
-
-        <label for="lastName">Last Name *</label>
-        <input type="text" id="lastName" name="lastName" required />
+      <form class="contactForm">
+        <div class="section">
+          <div>
+            <label for="firstName">First Name *</label><br />
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div>
+            <label for="lastName">Last Name *</label> <br/>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
 
         <label for="emailAddress">Email Address *</label>
         <input type="email" id="emailAddress" name="emailAddress" required />
 
         <p for="queryType">Query Type *</p>
 
-        <input type="radio" id="generalEnquiry" name="generalEnquiry" />
-        <label for="generalEnquiry">General Enquiry</label>
+        <div class="section">
+          <input type="radio" id="generalEnquiry" name="generalEnquiry" />
+          <label for="generalEnquiry">General Enquiry</label>
 
-        <input type="radio" id="suppportRequest" name="supportRequest" />
-        <label for="supportRequest">Support Request</label>
+          <input type="radio" id="suppportRequest" name="supportRequest" />
+          <label for="supportRequest">Support Request</label>
+        </div>
 
         <label for="Message">Message *</label>
-        <input type="text" id="Message" name="Message">
+        <input type="text" id="Message" name="Message" />
 
-        <input type="checkbox" id="consent" name="consent">
+        <input type="checkbox" id="consent" name="consent" />
         <label for="consent">I consent to being contacted by team *</label>
-<!--
+        <!--
         This field is required Last Name This field is required Email Address
         Please enter a valid email address This field is required Query Type
         General Enquiry Support Request Please select a query type Message This
@@ -59,5 +66,3 @@
     </div>
   </body>
 </html>
-
-

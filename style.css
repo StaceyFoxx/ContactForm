@@ -18,3 +18,12 @@ body {
   padding: 15px;
   border-radius: 15px;
 }
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+}
+
